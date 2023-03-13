@@ -8,30 +8,39 @@
     @vite('resources/css/app.css')
 </head>
 
-<body class="bg-amber-700 flex items-center flex-col">
+<body class="bg-amber-600 flex items-center flex-col">
     <!-- logo -->
     <div class="underline py-5">
         <div class="rounded-full border-solid border-black border-2 h-20 w-20 flex items-center justify-center">logo disini</div>
     </div>
     <!-- sapaan -->
-    <div class="underline pb-3">selamat datang di resto wong jowo!</div>
+    <p class="text-4xl py-7 sapaan text-amber-900 brightness-50">Selamat datang di Resto Wong Jowo!</p>
     <!-- perkenalan -->
-    <div class="bg-amber-900 underline rounded p-4">
-        Selamat datang di Resto Wong Jowo! Kami menyediakan makanan khas Jawa dengan cita rasa yang autentik dan bahan-bahan berkualitas. <br>
-        Restoran kami menyajikan berbagai hidangan yang pasti akan memuaskan selera Anda. <br>
-        Kami juga menyediakan layanan pemesanan makanan secara online dan pengiriman ke rumah. <br>
-        Silakan jelajahi website kami untuk melihat menu lengkap kami dan melakukan pemesanan. <br>
-        Terima kasih telah memilih Resto Wong Jowo.
+    <div class="bg-amber-800 text-lg rounded p-4 perkenalan text-amber-200 text-center drop-shadow-xl hover:scale-110 transition">
+        Kami menyediakan makanan khas Jawa dengan cita rasa yang autentik dan bahan-bahan berkualitas<br>
+        Restoran kami menyajikan berbagai hidangan yang pasti akan memuaskan selera Anda<br>
+        Kami juga menyediakan layanan pemesanan makanan secara online dan pengiriman ke rumah<br>
+        Silakan jelajahi website kami untuk melihat menu lengkap kami dan melakukan pemesanan<br>
+        Terima kasih telah memilih Resto Wong Jowo
     </div>
     <!-- user auth box -->
-    <div class="pt-6"> <!-- container -->
-        <div class="bg-slate-700 p-6 rounded">
-            tunggu apa lagi ayo pergi ke website!
-            <div class="flex items-center justify-center p-2">
-                <div class="mx-4 flex justify-center items-center bg-slate-300 rounded p-4">sign in</div>
-                <div class="mx-4 flex justify-center items-center bg-slate-300 rounded p-4">sing up</div>
+    <div class="pt-10"> <!-- container -->
+        <div class="bg-amber-900 p-6 hover:scale-125 transition-transform rounded-xl drop-shadow-2xl">
+            <div class="text-amber-200 font-extrabold">
+                tunggu apa lagi ayo pergi ke website!
             </div>
-            <div class="flex justify-end pt-2">guest</div>
+            <div class="flex items-center justify-center p-5">
+                <a href="{{ URL::route('signin') }}">
+                    <div class="mx-2 flex justify-center items-center hover:border-2 hover:border-amber-400 bg-amber-700 drop-shadow-lg rounded-md py-2 px-3 transition-all hover:bg-amber-800 text-amber-400 font-bold hover:brightness-75">sign in</div>
+                </a>
+                <a href="{{ URL::route('signup') }}">
+                    <div class="mx-2 flex justify-center items-center hover:border-2 hover:border-amber-400 bg-amber-700 drop-shadow-lg rounded-md py-2 px-3 transition-all hover:bg-amber-800 text-amber-400 font-bold hover:brightness-75">sign up</div>
+                </a>
+            </div>
+            <div class="text-center">atau masuk dengan</div>
+            <div class="flex justify-center pt-2">
+                <div class=" transition hover:text-zinc-400"><a href="">guest</a></div>
+            </div>
         </div>
     </div>
 </body>
