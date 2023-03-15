@@ -37,9 +37,11 @@
                     <div class="mx-2 flex justify-center items-center hover:border-2 hover:border-amber-400 bg-amber-700 drop-shadow-lg rounded-md py-2 px-3 transition-all hover:bg-amber-800 text-amber-400 font-bold hover:brightness-75">sign up</div>
                 </a>
             </div>
-            <div class="text-center">atau masuk dengan</div>
+            <div class="text-center text-amber-200 font-extrabold">atau masuk dengan</div>
             <div class="flex justify-center pt-2">
-                <div class=" transition hover:text-zinc-400"><a href="">guest</a></div>
+                <a href="{{ URL::route('home') }}">
+                    <div class=" text-amber-300 font-bold rounded-md bg-amber-600 hover:bg-amber-700 hover:border-2 hover:border-amber-300 py-2 px-3 drop-shadow-lg transition-all">akun guest</div>
+                </a>
             </div>
         </div>
     </div>
