@@ -13,15 +13,15 @@
     <form class="bg-white rounded-xl h-3/4 w-2/4 flex flex-col space-y-11 justify-center items-center shadow-md hover:shadow-xl transition-shadow">
         <!-- email/item 0 -->
         <div class="flex flex-col items-center">
-            <label for="nama">Email</label>
-            <input type="email" name="email" id="email" placeholder="contoh@mail.com" class="outline-none bg-gray-300 rounded-md p-5 focus:bg-gray-500 drop-shadow focus:drop-shadow-lg focus:scale-110 transition-all">
+            <label for="nama"><i class="fa fa-envelope"></i> Email</label>
+            <input type="email" name="email" id="email" placeholder="contoh@mail.com" class="outline-none bg-gray-300 text-gray-800 rounded-md p-5 focus:bg-gray-500 focus:text-gray-200 drop-shadow focus:drop-shadow-lg focus:scale-110 transition-all">
         </div>
         <!-- password/item 1 -->
         <div class="flex flex-col items-center">
-            <label for="nama">Password</label>
-            <input type="password" name="pass" id="pass" placeholder="password akunmu" class="outline-none bg-gray-300 rounded-md p-5 focus:bg-gray-500 drop-shadow focus:drop-shadow-lg focus:scale-110 transition-all">
+            <label for="nama"><i class="fa fa-key"></i> Password</label>
+            <input type="password" name="pass" id="pass" placeholder="password akunmu" class="outline-none bg-gray-300 text-gray-800 rounded-md p-5 focus:bg-gray-500 focus:text-gray-200 drop-shadow focus:drop-shadow-lg focus:scale-110 transition-all">
         </div>
-        <!-- lupa pass/item 4 -->
+        <!-- lupa password/item 4 -->
         <div class="hover:scale-110 transition-all">
             <a href="">lupa password?</a>
         </div>

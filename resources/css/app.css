@@ -1,3 +1,6 @@
+/* font awesome */
+@import '/node_modules/fontawesome-free/css/all.css';
+
 /* fonts */
 @import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merriweather&display=swap');
@@ -7,8 +10,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
 /* merriwather font */
 .perkenalan {font-family: 'Merriweather', serif;}
 
 /* lobster font */
 .sapaan {font-family: 'Lobster', cursive;}
+
+/* remove search decorations */
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration { display: none; }
